@@ -367,6 +367,7 @@ img, video {
   max-width: 500px;
   margin: 0 auto;
   padding: 1rem;
+  background: #fff;
 }
 
 /* ===== FOOTER =====*/
@@ -581,6 +582,26 @@ a.read_more:hover {
     padding: 15px 0;
     margin-top: 20px;
     width: 90%;
+  }
+  /* Responsive Contact Section Fix */
+  .contact__container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    display: block !important;
+  }
+  .contact__form {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.5rem !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  .contact__input, .contact__button {
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
   }
 }
 
