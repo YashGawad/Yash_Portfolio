@@ -737,3 +737,28 @@ a.read_more:hover {
     max-width: 450px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .contact__container {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .contact__form {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.5rem !important;
+    margin: 0 !important;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .contact__input, .contact__button {
+    width: 100% !important;
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+  }
+}
