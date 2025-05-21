@@ -105,21 +105,27 @@ img, video { max-width: 100%; height: auto; display: block; }
     position: fixed;
     top: var(--header-height);
     right: -100%;
-    width: 80%;
-    height: 100%;
+    left: 0;
+    width: 80vw;
+    max-width: 350px;
+    height: 100vh;
+    min-height: 100vh;
     padding: 2rem;
     background-color: var(--second-color);
     transition: .5s;
     display: none;
+    overflow-y: auto;
+    box-sizing: border-box;
   }
   .nav__menu.show {
     right: 0;
     display: block;
   }
   .nav__toggle {
-    position: absolute;
-    top: 0.3rem;
-    left: 60%;
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    left: auto;
     z-index: 10001;
     background: var(--third-color);
     border-radius: 50%;
@@ -135,6 +141,9 @@ img, video { max-width: 100%; height: auto; display: block; }
   }
   .nav {
     position: relative;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 768px) {
