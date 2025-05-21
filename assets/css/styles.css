@@ -115,7 +115,7 @@ img, video { max-width: 100%; height: auto; display: block; }
     position: fixed;
     top: 1.2rem;
     right: 1.2rem;
-    z-index: 9999;
+    z-index: 10001;
     background: var(--third-color);
     border-radius: 50%;
     padding: 0.7rem 1rem;
