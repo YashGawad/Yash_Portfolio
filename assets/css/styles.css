@@ -119,7 +119,7 @@ img, video { max-width: 100%; height: auto; display: block; }
   .nav__toggle {
     position: absolute;
     top: 0.3rem;
-    left: 65%;
+    left: 60%;
     z-index: 10001;
     background: var(--third-color);
     border-radius: 50%;
