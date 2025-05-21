@@ -288,8 +288,8 @@ iframe {
 }
 @media (max-width: 600px) {
   .video-container {
-    width: 94vw;
-    max-width: 94vw;
+    width: 88vw;
+    max-width: 88vw;
     margin-left: auto;
     margin-right: auto;
     border-radius: 12px;
