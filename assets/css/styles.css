@@ -111,6 +111,22 @@ img, video { max-width: 100%; height: auto; display: block; }
     background-color: var(--second-color);
     transition: .5s;
   }
+  .nav__toggle {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.2rem;
+    z-index: var(--z-fixed);
+    background: var(--third-color);
+    border-radius: 50%;
+    padding: 0.5rem 0.7rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--first-color);
+    font-size: 2rem;
+    cursor: pointer;
+  }
 }
 .nav__item { margin-bottom: var(--mb-4); }
 .nav__link { position: relative; color: var(--text-color); }
