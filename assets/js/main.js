@@ -53,4 +53,30 @@ const sr = ScrollReveal({
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
 sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{ interval: 200}); 
-sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200}); 
+sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+
+// ===== THEME TOGGLE (DARK/LIGHT MODE) =====
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const body = document.body;
+
+// On load, set theme from localStorage
+if (localStorage.getItem('theme') === 'light') {
+  body.classList.add('light-theme');
+  if (themeIcon) {
+    themeIcon.classList.remove('bx-moon');
+    themeIcon.classList.add('bx-sun');
+  }
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-theme');
+    const isLight = body.classList.contains('light-theme');
+    if (themeIcon) {
+      themeIcon.classList.toggle('bx-moon', !isLight);
+      themeIcon.classList.toggle('bx-sun', isLight);
+    }
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+}
