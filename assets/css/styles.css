@@ -266,6 +266,9 @@ iframe {
   height: 100%;
 }
 @media (max-width: 600px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
   .video-container {
     width: 98vw;
     max-width: 98vw;
@@ -275,13 +278,14 @@ iframe {
     box-sizing: border-box;
   }
   .video-container iframe {
-    width: 98vw !important;
-    max-width: 98vw !important;
-    height: 56.25vw !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 100% !important;
     left: 0;
     box-sizing: border-box;
     border-radius: 12px;
     background: #000;
+    display: block;
   }
   .map-responsive {
     max-width: 98vw;
