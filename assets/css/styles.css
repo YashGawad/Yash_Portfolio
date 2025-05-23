@@ -97,9 +97,26 @@ img, video { max-width: 100%; height: auto; display: block; }
 .nav {
   height: var(--header-height);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   font-weight: var(--font-semi);
+}
+.nav__logo-wrap {
+  margin-right: auto;
+}
+.nav__menu {
+  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav__logo-wrap {
+    margin-right: 0;
+  }
+  .nav__menu {
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -195,6 +212,28 @@ img, video { max-width: 100%; height: auto; display: block; }
   background-color: var(--first-color);
 }
 .show { right: 0; }
+
+/* Remove flex order overrides for nav items */
+@media (max-width: 767px) {
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Remove order property so nav order matches HTML */
+  .nav__item:nth-child(2) {
+    order: initial;
+  }
+}
+@media (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+  /* Remove order property so nav order matches HTML */
+  .nav__item:nth-child(2) {
+    order: initial;
+  }
+}
 
 /* ===== HOME SECTION ===== */
 .home {
