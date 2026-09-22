@@ -4,216 +4,784 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yash Gawad — Full-Stack Developer & Cloud Engineer. Experienced in building and deploying applications with React.js, Node.js, Express.js, PostgreSQL, Docker, and AWS.">
+    <meta name="keywords" content="Yash Gawad, Full-Stack Developer, Software Engineer, React.js, Node.js, Express.js, PostgreSQL, AWS, Docker, Vercel, Render, Portfolio">
+    <meta name="author" content="Yash Gawad">
+    <meta property="og:title" content="Yash Gawad | Full-Stack Developer &amp; Cloud Engineer">
+    <meta property="og:description" content="Full-stack developer experienced in building and deploying applications with React.js, Node.js, Express.js, and PostgreSQL.">
+    <meta property="og:type" content="website">
+
+    <title>Yash Gawad | Full-Stack Developer &amp; Cloud Engineer</title>
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- ===== BOX ICONS ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- ===== CUSTOM CSS DESIGN SYSTEM ===== -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- =====BOX ICONS===== -->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <title>Yash Gawad</title>
-    <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-        <nav class="nav bd-grid">
-            <div class="nav__logo-wrap">
-                <a href="#" class="nav__logo">Yash</a>
-            </div>
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#introduction" class="nav__link">Introduction</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+    <!-- Ambient Texture Pattern -->
+    <div class="ambient-pattern"></div>
+
+    <!-- ===== HEADER & NAVBAR ===== -->
+    <header class="header" id="header">
+        <div class="container navbar">
+            <a href="#home" class="nav-brand">
+                <span class="nav-brand-code">&lt;YG /&gt;</span>
+                <span>Yash Gawad</span>
+                <span class="nav-brand-dot"></span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
-            <div class="nav__actions">
-                <button id="theme-toggle" aria-label="Toggle dark/light mode" class="theme-toggle-btn">
-                    <i id="theme-icon" class='bx bx-moon'></i>
-                </button>
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    <span>Available for Hire</span>
                 </div>
+                <a href="Yash_Gawad_Resume.pdf" target="_blank" class="btn btn-outline-gold btn-sm" aria-label="Open Resume PDF">
+                    <i class='bx bx-file'></i> Resume
+                </a>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                    <i class='bx bx-menu'></i>
+                </button>
             </div>
-        </nav>
+        </div>
     </header>
 
-    <main class="l-main">
-        <section class="home bd-grid" id="home">
-            <div class="home__img">
-                <div class="home__img-circle">
-                    <img src="assets/img/My image.jpg" alt="Yash Gawad" class="home__profile-img" />
+    <main>
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-status-tag">
+                        <span class="status-dot"></span>
+                        <span>Full-Stack Developer &bull; Cloud &amp; Web Systems</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Building <span class="gradient-text">Scalable Web Apps</span> &amp; Cloud Architectures.
+                    </h1>
+                    <p class="hero-description">
+                        Full-stack developer experienced in building and deploying applications with 
+                        <strong>React.js, Node.js, Express.js, and PostgreSQL</strong>. Skilled in REST API development and cloud deployment using 
+                        <strong>AWS, Vercel, Render, and Docker</strong>; currently building a multi-tenant Local Commerce Platform.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class='bx bx-code-alt'></i> View Projects
+                        </a>
+                        <a href="Yash_Gawad_Resume.pdf" target="_blank" download class="btn btn-secondary">
+                            <i class='bx bx-download'></i> Download Resume
+                        </a>
+                        <button class="copy-pill" data-copy="gawadyash32@gmail.com" title="Click to copy email address">
+                            <i class='bx bx-copy'></i>
+                            <span>gawadyash32@gmail.com</span>
+                        </button>
+                    </div>
+
+                    <div class="hero-meta-strip">
+                        <div class="meta-item">
+                            <i class='bx bx-map-pin'></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class='bx bx-briefcase-alt'></i>
+                            <span>Full-Stack &amp; Cloud</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class='bx bx-book-bookmark'></i>
+                            <span>B.E. Computer Engineering</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Yash Gawad</span><br> </h1>
-                <a href="#contact" class="button">Hire me</a>
-            </div>
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/yash-gawad-638189363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/yashgawad" class="home__social-icon"><i class='bx bxl-github'></i></a>
-            </div>
-        </section>
-        <section id="introduction">
-            <div>
-                <h2 class="section-title">Introduction</h2>
-                <div class="video-container">
-                    <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/yRpLlJmRo2w?si=Bw3j9S7p4RzOyewt"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <!-- Hero Profile Visual -->
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-img-container">
+                            <img src="assets/img/My image.jpg" alt="Yash Gawad - Full-Stack Developer" class="profile-img">
+                        </div>
+                        <div class="profile-card-footer">
+                            <div class="profile-card-info">
+                                <h3>Yash Gawad</h3>
+                                <p>Full-Stack Engineer</p>
+                            </div>
+                            <div class="profile-card-socials">
+                                <a href="https://linkedin.com/in/yash-gawad" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn profile">
+                                    <i class='bx bxl-linkedin'></i>
+                                </a>
+                                <a href="https://github.com/YashGawad" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub profile">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                                <a href="mailto:gawadyash32@gmail.com" class="social-btn" aria-label="Send direct email">
+                                    <i class='bx bx-envelope'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Floating Tech Chip -->
+                        <div class="terminal-chip">
+                            <i class='bx bx-terminal'></i>
+                            <span>React &bull; Node &bull; PostgreSQL &bull; AWS</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--===== ABOUT =====-->
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-            <div class="about__container bd-grid">
-                <div class="about__img">
-                    <img src="assets/img/prefil1.jpg" alt="">
-                </div>
-                <div>
-                    <h2 class="about__subtitle">I'm Yash</h2>
-                    <ul class="list-disc pl-6 space-y-2 text-lg">
-                        <li><strong>Name:</strong> Yash Gawad</li>
-                        <li><strong>Location:</strong> Mumbai, India</li>
-                        <li><strong>Education:</strong> Bachelor of Engineering in Computer Engineering (COMPS)</li>
-                        <li><strong>College:</strong> St. John College of Engineering and Management</li>
-                        <li><strong>Roll Number:</strong> 71</li>
-                        <li><strong>Languages Known:</strong> English, Hindi, Marathi</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!--===== SKILLS =====-->
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills__container">
-                <div class="skills__lists">
-                    <h2 class="skills__subtitle">Professional Skills</h2>
-                    <p class="skills__text">Take a look at some of the things I love working on.</p>
-                    <div class="skills__data">
-                        <ul>
-                            <strong>Technical Skills:</strong><br>
-                            <li>HTML5, CSS3, JavaScript</li>
-                            <li>Python (Basics to Intermediate)</li>
-                            <li>SQL & SQLite</li>
-                            <li>Git & GitHub</li>
-                            <li>Responsive Web Design</li>
-                            <li>Basic React & TailwindCSS</li>
-                        </ul>
-                    </div>
-                    <div class="skills__data">
-                        <ul>
-                            <strong>Soft Skills:</strong><br>
-                            <li>Team Collaboration</li>
-                            <li>Time Management</li>
-                            <li>Problem-Solving</li>
-                            <li>Adaptability</li>
-                            <li>Communication Skills</li>
-                        </ul>
-                    </div>
-                    <div class="skills__data">
-                        <ul>
-                            <strong>Tools and Platforms:</strong><br>
-                            <li>VS Code</li>
-                            <li>GitHub</li>
-                            <li>Figma (Basics)</li>
-                            <li>Canva</li>
-                            <li>Surge & GitHub Pages</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="skills__img-wrap">
-                    <img src="assets/img/professional%20skills.gif" alt="Professional Skills" class="skills__img">
+        <!-- ===== TECH STACK STRIP ===== -->
+        <section class="tech-strip-section">
+            <div class="container">
+                <p class="tech-strip-label">Verified Production Stack &bull; Core Competencies</p>
+                <div class="tech-badges-grid">
+                    <div class="tech-badge"><i class='bx bxl-react'></i> React.js</div>
+                    <div class="tech-badge"><i class='bx bxl-nodejs'></i> Node.js</div>
+                    <div class="tech-badge"><i class='bx bxs-server'></i> Express.js</div>
+                    <div class="tech-badge"><i class='bx bxs-data'></i> PostgreSQL</div>
+                    <div class="tech-badge"><i class='bx bxl-aws'></i> AWS (EC2 / RDS / S3 / IAM)</div>
+                    <div class="tech-badge"><i class='bx bxl-docker'></i> Docker</div>
+                    <div class="tech-badge"><i class='bx bxl-python'></i> Python</div>
+                    <div class="tech-badge"><i class='bx bxs-data'></i> MySQL</div>
+                    <div class="tech-badge"><i class='bx bxl-javascript'></i> JavaScript</div>
+                    <div class="tech-badge"><i class='bx bxs-layer'></i> Redux</div>
+                    <div class="tech-badge"><i class='bx bx-git-branch'></i> Git &amp; GitHub</div>
                 </div>
             </div>
         </section>
 
-        <!--===== BLOG/PROJECTS =====-->
-        <div class="container" id="blog">
-            <section class="work section" id="work">
-                <h2 class="section-title">My Latest Projects</h2>
-                <div class="grid blog-grid">
-                    <!-- Card 1 -->
-                    <div class="card">
-                        <div class="card_img">
-                            <a href="https://yashgawad.github.io/Yash_Portfolio/" target="_blank">
-                                <img src="assets/img/Portfolio.png" alt="Portfolio Image">
+        <!-- ===== FEATURED PROJECTS SECTION ===== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class='bx bx-cube-alt'></i> Engineering Showcase
+                    </div>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">
+                        Production applications, multi-tenant cloud platforms, and deep learning vision systems directly from my resume.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: LocalCommerce (Flagship Multi-Tenant) -->
+                    <article class="project-card featured-large">
+                        <div class="project-header">
+                            <span class="project-category">
+                                <i class='bx bx-store-alt'></i> Full-Stack &bull; Multi-Tenant Platform
+                            </span>
+                            <div class="project-links-top">
+                                <a href="https://github.com/YashGawad" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="LocalCommerce GitHub repository">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                                <a href="https://yashgawad.github.io/Yash_Portfolio/" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="LocalCommerce live demo">
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">LocalCommerce — Multi-Tenant Local Commerce Platform</h3>
+                        <p class="project-description">
+                            Built a multi-tenant local commerce platform with separate Customer, Business, Delivery, and Admin experiences for independent local businesses, deployed with the frontend on Vercel and backend/database on Render.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class='bx bx-check-circle'></i>
+                                <span>Designed store-scoped management for products, inventory, orders, customers, staff, fulfillment, discounts, analytics, and reviews, with role-based access and pickup/local-delivery workflows.</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class='bx bx-check-circle'></i>
+                                <span>Architected a global product and store-specific listing model enabling cross-store product discovery while preserving independent pricing, inventory, and fulfillment rules.</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class='bx bx-check-circle'></i>
+                                <span>Built a Node.js/Express REST API with PostgreSQL and JWT-based authentication for catalog, ordering, and multi-tenant data management.</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">Vercel</span>
+                            <span class="tech-tag">Render</span>
+                            <span class="tech-tag">JWT Auth</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <button class="deep-dive-btn" data-open-modal="localcommerce">
+                                <i class='bx bx-network-chart'></i> Architecture &amp; Deep-Dive
+                            </button>
+                            <a href="https://github.com/YashGawad" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <i class='bx bxl-github'></i> View Repository
                             </a>
                         </div>
-                        <div class="card_body">
-                            <a href="https://yashgawad.github.io/Yash_Portfolio/" target="_blank">
-                                <h2 class="card_title">My Portfolio</h2>
+                    </article>
+
+                    <!-- Project 2: AI Food Nutrition Estimator (Cloud + Vision) -->
+                    <article class="project-card featured-large">
+                        <div class="project-header">
+                            <span class="project-category" style="color:var(--accent-gold-light); background:var(--accent-gold-glow); border-color:rgba(212,175,55,0.35);">
+                                <i class='bx bx-brain'></i> AI Vision &bull; AWS Cloud &bull; Docker
+                            </span>
+                            <div class="project-links-top">
+                                <a href="https://github.com/YashGawad" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="AI Food Estimator GitHub repository">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                                <a href="https://yashgawad.github.io/Yash_Portfolio/" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="AI Food Estimator live demo">
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">AI-Based Food Nutrition Estimator</h3>
+                        <p class="project-description">
+                            Developed a cloud-based full-stack application that analyzes user-uploaded food images using a CNN/transfer-learning approach to estimate calories and nutritional information.
+                        </p>
+
+                        <div class="project-highlights">
+                            <div class="highlight-item">
+                                <i class='bx bx-check-circle'></i>
+                                <span>Built RESTful APIs to connect the React frontend with a Python/TensorFlow AI service and manage application data through MySQL.</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class='bx bx-check-circle'></i>
+                                <span>Deployed the React frontend on Vercel and backend/AI services on AWS EC2, with MySQL hosted on AWS RDS and food images stored in Amazon S3.</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class='bx bx-check-circle'></i>
+                                <span>Containerized the Python AI service with Docker and configured AWS IAM-based access controls for cloud resources.</span>
+                            </div>
+                        </div>
+
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">AWS EC2</span>
+                            <span class="tech-tag">AWS RDS</span>
+                            <span class="tech-tag">Amazon S3</span>
+                            <span class="tech-tag">AWS IAM</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <button class="deep-dive-btn" data-open-modal="foodnutrition">
+                                <i class='bx bx-network-chart'></i> Architecture &amp; Deep-Dive
+                            </button>
+                            <a href="https://github.com/YashGawad" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                                <i class='bx bxl-github'></i> View Repository
                             </a>
-                            <p>I have created my personal portfolio website which includes my details. <a href="https://yashgawad.github.io/Yash_Portfolio/" target="_blank">Visit My Portfolio</a></p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Gawad Electronics Shop -->
+                    <article class="project-card featured-standard">
+                        <div class="project-header">
+                            <span class="project-category">
+                                <i class='bx bx-cart'></i> Web Application &bull; E-Commerce
+                            </span>
+                            <div class="project-links-top">
+                                <a href="https://yashgawad.github.io/Gawad_Electronics/" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="Gawad Electronics live store">
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h3 class="project-title">Online Gawad Electronics Shop</h3>
+                        <p class="project-description">
+                            Explore my online electronics shop project, featuring a modern UI, product catalog, shopping cart, and secure checkout. Built with HTML, CSS, and JavaScript for a seamless e-commerce experience.
+                        </p>
+
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">DOM State</span>
+                            <span class="tech-tag">Responsive UI</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://yashgawad.github.io/Gawad_Electronics/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                                <i class='bx bx-link-external'></i> Visit Live Shop
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TECHNICAL SKILLS MATRIX (EXACT RESUME CATEGORIES) ===== -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class='bx bx-layer'></i> Technical Capabilities
+                    </div>
+                    <h2 class="section-title">Technical Skills &amp; Stack</h2>
+                    <p class="section-subtitle">
+                        Direct categorization of my programming languages, frameworks, cloud services, databases, and developer tooling.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- 1. Frontend -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class='bx bxl-react'></i></div>
+                            <h3 class="category-title">Frontend</h3>
+                        </div>
+                        <div class="skills-badge-list">
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> React.js</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> Redux</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">Responsive Design</span>
                         </div>
                     </div>
-                    <!-- Card 2 -->
-                    <div class="card">
-                        <div class="card_img">
-                            <img src="assets/img/Chatbot.jpg" alt="Chatbot Image">
+
+                    <!-- 2. Backend -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class='bx bxl-nodejs'></i></div>
+                            <h3 class="category-title">Backend</h3>
                         </div>
-                        <div class="card_body">
-                            <h2 class="card_title">Website for Girls' Problems</h2>
-                            <p>I have created a website for girls' problems that includes a chatbot for assistance.</p>
+                        <div class="skills-badge-list">
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> Node.js</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> Express.js</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> REST API Development</span>
+                            <span class="skill-pill">JWT Authentication</span>
+                            <span class="skill-pill">Role-Based Access Control</span>
                         </div>
                     </div>
-                    <!-- Card 3 (Demo) -->
-                    <div class="card">
-                        <div class="card_img">
-                            <a href="https://yashgawad.github.io/Gawad_Electronics/" target="_blank"><img src="assets/img/gawadelectronics.png" alt="Online Gawad Electronics Shop"></a>
+
+                    <!-- 3. Programming Languages -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class='bx bx-code-curly'></i></div>
+                            <h3 class="category-title">Programming Languages</h3>
                         </div>
-                        <div class="card_body">
-                            <a href="https://yashgawad.github.io/Gawad_Electronics/" target="_blank"><h2 class="card_title">Online Gawad Electronics Shop</h2></a>
-                            <p>Explore my online electronics shop project, featuring a modern UI, product catalog, shopping cart, and secure checkout. Built with HTML, CSS, and JavaScript for a seamless e-commerce experience. <a href="https://yashgawad.github.io/Gawad_Electronics/" target="_blank">Visit Shop</a></p>
+                        <div class="skills-badge-list">
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> JavaScript</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> Python</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">C</span>
+                            <span class="skill-pill">C++</span>
+                            <span class="skill-pill">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- 4. Databases -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class='bx bxs-data'></i></div>
+                            <h3 class="category-title">Databases</h3>
+                        </div>
+                        <div class="skills-badge-list">
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> PostgreSQL</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> MySQL</span>
+                            <span class="skill-pill">Multi-Tenant Isolation</span>
+                            <span class="skill-pill">Schema Modeling</span>
+                            <span class="skill-pill">Query Optimization</span>
+                        </div>
+                    </div>
+
+                    <!-- 5. Cloud & Deployment -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class='bx bxl-aws'></i></div>
+                            <h3 class="category-title">Cloud &amp; Deployment</h3>
+                        </div>
+                        <div class="skills-badge-list">
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> AWS (EC2, RDS, S3, IAM)</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> Docker</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> Vercel</span>
+                            <span class="skill-pill featured-tech"><i class='bx bxs-badge-check'></i> Render</span>
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">GitHub</span>
+                        </div>
+                    </div>
+
+                    <!-- 6. Tools -->
+                    <div class="skills-category-card">
+                        <div class="category-header">
+                            <div class="category-icon"><i class='bx bx-wrench'></i></div>
+                            <h3 class="category-title">Tools &amp; Workflows</h3>
+                        </div>
+                        <div class="skills-badge-list">
+                            <span class="skill-pill">Postman</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Claude Code</span>
+                            <span class="skill-pill">Google Antigravity</span>
+                            <span class="skill-pill">Linux Environment</span>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
 
-        <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact__container">
-                <form action="https://formsubmit.co/223yash2014@sjcem.edu.in" method="POST" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input" name="name" required>
-                    <input type="email" placeholder="Email" class="contact__input" name="email" required>
-                    <textarea placeholder="Message" cols="0" rows="10" class="contact__input" name="message"
-                        required></textarea>
-                    <input type="submit" value="Submit" class="contact__button button">
-                </form>
+                <!-- Verified Certification Banner -->
+                <div class="cert-card">
+                    <div class="cert-left">
+                        <div class="cert-icon">
+                            <i class='bx bxs-certification'></i>
+                        </div>
+                        <div>
+                            <div class="cert-title">React.js &amp; Redux Professional Certification</div>
+                            <div class="cert-issuer">Issued by Knowledge Gate &bull; Verified Modern React &amp; State Management</div>
+                        </div>
+                    </div>
+                    <div class="timeline-meta-tag">
+                        <i class='bx bx-check'></i> Verified Certificate
+                    </div>
+                </div>
             </div>
-            <div class="map-responsive">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14437.544931393786!2d72.78562720945628!3d19.707972337848954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71c92fbd91e67%3A0x2a3ce68676417a45!2sSt.%20John%20College%20of%20Engineering%20and%20Management!5e1!3m2!1sen!2sin!4v1747810884926!5m2!1sen!2sin"
-                    width="100%" height="450" style="margin-top:30px" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        </section>
 
+        <!-- ===== EXPERIENCE & EDUCATION TIMELINE ===== -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class='bx bx-history'></i> Career &amp; Milestones
+                    </div>
+                    <h2 class="section-title">Experience &amp; Education</h2>
+                    <p class="section-subtitle">
+                        Academic and engineering track record from foundational engineering to production cloud systems.
+                    </p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Timeline Item 1: Current Work -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot current"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Full-Stack Developer &bull; Multi-Tenant Platform Engineering</h3>
+                                <span class="timeline-period">2024 – Present</span>
+                            </div>
+                            <div class="timeline-org">Independent Projects &bull; LocalCommerce &amp; Cloud AI Apps</div>
+                            <p class="timeline-description">
+                                Architecting and deploying full-stack web applications with React.js, Node.js, Express.js, PostgreSQL, Docker, and AWS. 
+                                Built a complete multi-tenant local commerce engine with store-scoped inventory, JWT authentication, and Render/Vercel pipelines.
+                            </p>
+                            <span class="timeline-meta-tag"><i class='bx bx-badge-check'></i> Current Engineering Focus</span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: B.E. Computer Engineering -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">B.E. in Computer Engineering (Pursuing)</h3>
+                                <span class="timeline-period">2024 – 2027</span>
+                            </div>
+                            <div class="timeline-org">St. John Institute of Technology and Management, Mumbai</div>
+                            <p class="timeline-description">
+                                Focusing on advanced algorithms, distributed systems, operating systems, cloud infrastructures, and database design.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Diploma in Computer Engineering -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Diploma in Computer Engineering</h3>
+                                <span class="timeline-period">2021 – 2024</span>
+                            </div>
+                            <div class="timeline-org">Pravin Patil Polytechnic College &bull; Aggregate: 83.09%</div>
+                            <p class="timeline-description">
+                                Graduated with First Class Distinction (83.09%). Built strong core competencies in C, C++, Java, Python, data structures, SQL databases, and web technologies.
+                            </p>
+                            <span class="timeline-meta-tag"><i class='bx bx-trophy'></i> 83.09% Aggregate Distinction</span>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: SSC -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                                <span class="timeline-period">2020 – 2021</span>
+                            </div>
+                            <div class="timeline-org">Rajguru H.M. Pandit Vidyalaya, Saphale &bull; 79.43%</div>
+                            <p class="timeline-description">
+                                Completed secondary education with 79.43%, with core focus on mathematics and science.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT & SUMMARY SECTION ===== -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+                <div class="about-narrative">
+                    <div class="section-tag">
+                        <i class='bx bx-user'></i> Professional Summary
+                    </div>
+                    <h3>Engineered for Performance, Reliability &amp; Scale.</h3>
+                    <p>
+                        I am a full-stack developer based in Mumbai, India. I specialize in building complete full-stack web applications from responsive 
+                        React interfaces down to PostgreSQL relational database modeling and Dockerized cloud deployments on AWS and Render.
+                    </p>
+                    <p>
+                        Whether designing store-scoped multi-tenant data partitioning or orchestrating deep learning vision models on AWS EC2, 
+                        I bring disciplined engineering practices, clean code conventions, and high visual craft to every project.
+                    </p>
+
+                    <div class="education-box">
+                        <h4>Languages Known</h4>
+                        <p>English, Hindi, Marathi</p>
+                        <h4 style="margin-top:0.75rem;">Availability</h4>
+                        <p>Available for Full-Stack Developer Roles, Software Engineering Internships &amp; Technical Projects</p>
+                    </div>
+                </div>
+
+                <div class="about-stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Full-Stack Cloud &amp; AI Apps</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">83.1%</span>
+                        <span class="stat-label">Polytechnic Engineering Aggregate</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">AWS &amp; Docker</span>
+                        <span class="stat-label">Cloud Deployment &amp; Containers</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">PostgreSQL</span>
+                        <span class="stat-label">Multi-Tenant Data Modeling</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT & HIRE ME SECTION ===== -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-tag">
+                        <i class='bx bx-send'></i> Get in Touch
+                    </div>
+                    <h2 class="section-title">Let's Build Something Great</h2>
+                    <p class="section-subtitle">
+                        Interested in discussing a full-stack engineering role, cloud project, or architecture collaboration? Reach out directly.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Direct Info Cards (Direct from Resume) -->
+                    <div class="contact-cards-list">
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class='bx bx-envelope'></i></div>
+                            <div class="contact-card-text">
+                                <div class="contact-card-label">Email</div>
+                                <div class="contact-card-val">gawadyash32@gmail.com</div>
+                            </div>
+                            <button class="contact-card-copy-btn" data-copy="gawadyash32@gmail.com" title="Copy email">
+                                <i class='bx bx-copy'></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class='bx bx-phone'></i></div>
+                            <div class="contact-card-text">
+                                <div class="contact-card-label">Phone</div>
+                                <div class="contact-card-val">+91-9322268479</div>
+                            </div>
+                            <button class="contact-card-copy-btn" data-copy="+919322268479" title="Copy phone number">
+                                <i class='bx bx-copy'></i>
+                            </button>
+                        </div>
+
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class='bx bxl-linkedin'></i></div>
+                            <div class="contact-card-text">
+                                <div class="contact-card-label">LinkedIn</div>
+                                <div class="contact-card-val">linkedin.com/in/yash-gawad</div>
+                            </div>
+                            <a href="https://linkedin.com/in/yash-gawad" target="_blank" rel="noopener noreferrer" class="contact-card-copy-btn" aria-label="Open LinkedIn profile">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class='bx bxl-github'></i></div>
+                            <div class="contact-card-text">
+                                <div class="contact-card-label">GitHub</div>
+                                <div class="contact-card-val">github.com/YashGawad</div>
+                            </div>
+                            <a href="https://github.com/YashGawad" target="_blank" rel="noopener noreferrer" class="contact-card-copy-btn" aria-label="Open GitHub profile">
+                                <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact-card-item">
+                            <div class="contact-card-icon"><i class='bx bx-map'></i></div>
+                            <div class="contact-card-text">
+                                <div class="contact-card-label">Location</div>
+                                <div class="contact-card-val">Mumbai, Maharashtra, India</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Modern Contact Form -->
+                    <div class="contact-form-container">
+                        <form action="https://formsubmit.co/gawadyash32@gmail.com" method="POST" id="contact-form">
+                            <!-- Anti-spam & redirect config -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="_subject" class="form-input" placeholder="Project Inquiry / Job Opportunity" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class='bx bx-paper-plane'></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!--===== FOOTER =====-->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <p class="footer__title">Yash</p>
-        <div class="footer__social">
-            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
-            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>Yash Gawad</h4>
+                    <p>Full-Stack Developer &bull; React &bull; Node.js &bull; PostgreSQL &bull; AWS</p>
+                </div>
+
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Yash_Gawad_Resume.pdf" target="_blank">Resume (PDF)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Yash Gawad. All rights reserved.</p>
+                <a href="#home" class="back-to-top">
+                    <span>Back to Top</span>
+                    <i class='bx bx-up-arrow-alt'></i>
+                </a>
+            </div>
         </div>
-        <p class="footer__copy">&#169; Yash Gawad. All rights reserved</p>
     </footer>
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--===== MAIN JS =====-->
+    <!-- ===== INTERACTIVE SYSTEM ARCHITECTURE MODAL ===== -->
+    <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-header-info">
+                    <i class='bx bx-layer' style="color:var(--accent-gold); font-size:1.4rem;"></i>
+                    <div>
+                        <h3 id="modal-project-title">Project Architecture</h3>
+                        <p id="modal-project-category" style="font-size:0.8rem; font-family:var(--font-mono); color:var(--text-muted);"></p>
+                    </div>
+                </div>
+                <button class="modal-close-btn" id="modal-close" aria-label="Close modal window">
+                    <i class='bx bx-x'></i>
+                </button>
+            </div>
+
+            <div class="modal-tabs">
+                <button class="modal-tab active" data-tab="architecture">Data Flow &amp; Architecture</button>
+                <button class="modal-tab" data-tab="specs">System Specifications</button>
+                <button class="modal-tab" data-tab="highlights">Resume Key Points</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- Tab 1: Architecture ASCII -->
+                <div class="tab-pane active" id="tab-architecture">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <div class="window-dots">
+                                <span class="window-dot red"></span>
+                                <span class="window-dot yellow"></span>
+                                <span class="window-dot green"></span>
+                            </div>
+                            <span>architecture-flow.diagram</span>
+                        </div>
+                        <pre class="code-content" id="modal-code-content"></pre>
+                    </div>
+                </div>
+
+                <!-- Tab 2: System Specs -->
+                <div class="tab-pane" id="tab-specs">
+                    <div id="modal-specs-list" style="display:flex; flex-direction:column; gap:0.25rem;"></div>
+                </div>
+
+                <!-- Tab 3: Key Highlights -->
+                <div class="tab-pane" id="tab-highlights">
+                    <ul id="modal-highlights-list" style="padding:0.5rem 0;"></ul>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <span style="font-size:0.825rem; color:var(--text-muted); font-family:var(--font-mono);">
+                    Press <kbd style="background:rgba(255,255,255,0.1); padding:0.15rem 0.35rem; border-radius:4px;">ESC</kbd> to close
+                </span>
+                <div style="display:flex; gap:0.75rem;">
+                    <a href="#" id="modal-github-link" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                        <i class='bx bxl-github'></i> View Repository
+                    </a>
+                    <a href="#" id="modal-live-link" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                        <i class='bx bx-link-external'></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== LOGIC SCRIPT ===== -->
     <script src="assets/js/main.js"></script>
 </body>
 
